@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta files-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Dositej Unkovic" />
+    <meta name="description" content="Are you planing on having" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <!-- All Search Engines -->
+
+    <!-- Title and Favicon -->
+    <title>Wedding Day Special</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway|Tangerine"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Stylesheets and Bootstrap link-->
+    <link rel="stylesheet" type="text/css" href="styles/style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap scripts-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="heading">
+      <!-- Nav Bar -->
+      <div class="heading-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light navBar">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="navbar-brand" href="index.html"
+                  ><img src="images/wedding-logo2.png" alt="logo" />
+                </a>
+              </li>
+              <li class="nav-item nav-item-text">
+                <a class="nav-link font-color-white" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item nav-item-text">
+                <a class="nav-link font-color-white" href="#features-section"
+                  >FEATURES</a
+                >
+              </li>
+              <li class="nav-item nav-item-text">
+                <a class="nav-link font-color-white" href="#gallery-section"
+                  >GALLERY</a
+                >
+              </li>
+              <li class="nav-item nav-item-text">
+                <a class="nav-link font-color-white" href="#pricing">PRICING</a>
+              </li>
+              <li class="nav-item nav-item-text">
+                <a class="nav-link font-color-white" href="#contact-section"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Gallery Section Container 1 -->
+
+    <section class="skin-color-container" id="gallery">
+      <div class="container-fluid">
+        <h3>New York</h3>
+
+        <div class="row">
+          <div class="column col-lg-3 col-md-4 col-sm-12">
+            <img
+              src="images/newyork-1.jpg"
+              onclick="openModal();currentSlide(1)"
+              class="hover-shadow cursor"
+              alt="newyork-wedding-picture-1"
+            />
+          </div>
+
+          <div class="column col-lg-3 col-md-4 col-sm-12">
+            <img
+              src="images/newyork-2.jpg"
+              onclick="openModal();currentSlide(2)"
+              class="hover-shadow cursor"
+              alt="newyork-wedding-picture-2"
+            />
+          </div>
+
+          <div class="column col-lg-3 col-md-4 col-sm-12">
+            <img
+              src="images/newyork-3.jpg"
+              onclick="openModal();currentSlide(3)"
+              class="hover-shadow cursor"
+              alt="newyork-wedding-picture-3"
+            />
+          </div>
+
+          <div class="column col-lg-3 col-md-4 col-sm-12">
+            <img
+              src="images/newyork-4.jpg"
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow cursor"
+              alt="newyork-wedding-picture-4"
+            />
+          </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div class="myModal modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+
+          <div class="modal-content">
+            <div class="mySlides">
+              <div class="numbertext">1 / 8</div>
+              <img
+                src="images/newyork-1.jpg"
+                style="width:100%"
+                alt="newyork-wedding-slide-1"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 8</div>
+              <img
+                src="images/newyork-2.jpg"
+                style="width:100%"
+                alt="newyork-wedding-slide-2"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 8</div>
+              <img
+                src="images/miami-3.jpg"
+                style="width:100%"
+                alt="newyork-wedding-slide-3"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 8</div>
+              <img
+                src="images/newyork-4.jpg"
+                style="width:100%"
+                alt="newyork-wedding-slide-4"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 8</div>
+              <img
+                src="images/newyork-5.jpg"
+                style="width:100%"
+                alt="newyork-wedding-slide-5"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">6 / 8</div>
+              <img
+                src="images/newyork-6.jpg"
+                style="width:100%"
+                alt="newyork-wedding-slide-6"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">7 / 8</div>
+              <img
+                src="images/newyork-7.jpg"
+                style="width:100%"
+                alt="newyork-wedding-slide-7"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">8 / 8</div>
+              <img
+                src="images/newyork-8.jpg"
+                style="width:100%"
+                alt="newyork-wedding-slide-8"
+              />
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)"
+              ><img src="images/arrow4.png" alt="arrow"
+            /></a>
+            <a class="next" onclick="plusSlides(1)"
+              ><img src="images/arrow3.png" alt="arrow"
+            /></a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p class="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="row">
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="images/newyork-1.jpg"
+                  onclick="currentSlide(1)"
+                  alt="Nature"
+                />
+                <img
+                  class="demo cursor"
+                  src="images/newyork-2.jpg"
+                  onclick="currentSlide(2)"
+                  alt="Nature"
+                />
+              </div>
+
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="images/newyork-3.jpg"
+                  onclick="currentSlide(3)"
+                  alt="Nature"
+                />
+                <img
+                  class="demo cursor"
+                  src="images/newyork-4.jpg"
+                  onclick="currentSlide(4)"
+                  alt="Lights"
+                />
+              </div>
+
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="images/newyork-5.jpg"
+                  onclick="currentSlide(5)"
+                  alt="Lights"
+                />
+                <img
+                  class="demo cursor"
+                  src="images/newyork-6.jpg"
+                  onclick="currentSlide(6)"
+                  alt="Lights"
+                />
+              </div>
+
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="images/newyork-7.jpg"
+                  onclick="currentSlide(7)"
+                  alt="Lights"
+                />
+                <img
+                  class="demo cursor"
+                  src="images/newyork-8.jpg"
+                  onclick="currentSlide(8)"
+                  alt="Lights"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery div 2 -->
+
+      <div class="container-fluid">
+        <h3>Miami</h3>
+        <div class="row">
+          <div class="column col-lg-3 col-md-4 col-sm-12">
+            <img
+              src="images/miami-1.jpg"
+              onclick="openModal();currentSlide(1)"
+              class="hover-shadow cursor"
+              alt="miami-wedding-image-1"
+            />
+          </div>
+          <div class="column col-lg-3 col-md-4 col-sm-12">
+            <img
+              src="images/miami-2.jpg"
+              onclick="openModal();currentSlide(2)"
+              class="hover-shadow cursor"
+              alt="miami-wedding-image-2"
+            />
+          </div>
+          <div class="column col-lg-3 col-md-4 col-sm-12">
+            <img
+              src="images/miami-3.jpg"
+              onclick="openModal();currentSlide(3)"
+              class="hover-shadow cursor"
+              alt="miami-wedding-image-3"
+            />
+          </div>
+          <div class="column col-lg-3 col-md-4 col-sm-12">
+            <img
+              src="images/miami-4.jpg"
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow cursor"
+              alt="miami-wedding-image-4"
+            />
+          </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div class="myModal modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides">
+              <div class="numbertext">1 / 8</div>
+              <img
+                src="images/miami-1.jpg"
+                style="width:100%"
+                alt="miami-wedding-slide-1"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 8</div>
+              <img
+                src="images/miami-2.jpg"
+                style="width:100%"
+                alt="miami-wedding-slide-2"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 8</div>
+              <img
+                src="images/miami-3.jpg"
+                style="width:100%"
+                alt="miami-wedding-slide-3"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 8</div>
+              <img
+                src="images/miami-4.jpg"
+                style="width:100%"
+                alt="miami-wedding-slide-4"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 8</div>
+              <img
+                src="images/miami-5.jpg"
+                style="width:100%"
+                alt="miami-wedding-slide-5"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">6 / 8</div>
+              <img
+                src="images/miami-6.jpg"
+                style="width:100%"
+                alt="miami-wedding-slide-6"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">7 / 8</div>
+              <img
+                src="images/miami-7.jpg"
+                style="width:100%"
+                alt="miami-wedding-slide-7"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">8 / 8</div>
+              <img
+                src="images/miami-8.jpg"
+                style="width:100%"
+                alt="miami-wedding-slide-8"
+              />
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)"
+              ><img src="images/arrow4.png" alt="arrow"
+            /></a>
+            <a class="next" onclick="plusSlides(1)"
+              ><img src="images/arrow3.png" alt="arrow"
+            /></a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p class="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="row">
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="images/miami-1.jpg"
+                  onclick="currentSlide(3)"
+                  alt="Nature"
+                />
+                <img
+                  class="demo cursor"
+                  src="images/miami-2.jpg"
+                  onclick="currentSlide(4)"
+                  alt="Lights"
+                />
+              </div>
+
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="images/miami-3.jpg"
+                  onclick="currentSlide(3)"
+                  alt="Nature"
+                />
+                <img
+                  class="demo cursor"
+                  src="images/miami-4.jpg"
+                  onclick="currentSlide(4)"
+                  alt="Lights"
+                />
+              </div>
+
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="images/miami-5.jpg"
+                  onclick="currentSlide(5)"
+                  alt="Lights"
+                />
+                <img
+                  class="demo cursor"
+                  src="images/miami-6.jpg"
+                  onclick="currentSlide(6)"
+                  alt="Lights"
+                />
+              </div>
+
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="images/miami-7.jpg"
+                  onclick="currentSlide(7)"
+                  alt="Lights"
+                />
+                <img
+                  class="demo cursor"
+                  src="images/miami-8.jpg"
+                  onclick="currentSlide(8)"
+                  alt="Lights"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery div 3 -->
+
+      <div class="container-fluid">
+        <h3>Hawaii</h3>
+        <div class="row">
+          <div class="column col-lg-3 col-md-4 col-sm-12">
+            <img
+              src="images/hawaii-1.jpg"
+              onclick="openModal();currentSlide(1)"
+              class="hover-shadow cursor"
+            />
+          </div>
+          <div class="column col-lg-3 col-md-4 col-sm-12">
+            <img
+              src="images/hawaii-2.jpg"
+              onclick="openModal();currentSlide(2)"
+              class="hover-shadow cursor"
+            />
+          </div>
+          <div class="column col-lg-3 col-md-4 col-sm-12">
+            <img
+              src="images/hawaii-3.jpg"
+              onclick="openModal();currentSlide(3)"
+              class="hover-shadow cursor"
+            />
+          </div>
+          <div class="column col-lg-3 col-md-4 col-sm-12">
+            <img
+              src="images/hawaii-7.jpg"
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow cursor"
+            />
+          </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div class="myModal modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides">
+              <div class="numbertext">1 / 8</div>
+              <img src="images/miami-1.jpg" style="width:100%" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="images/miami-2.jpg" style="width:100%" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 8</div>
+              <img src="images/miami-3.jpg" style="width:100%" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 8</div>
+              <img src="images/miami-4.jpg" style="width:100%" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 8</div>
+              <img src="images/miami-5.jpg" style="width:100%" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">6 / 8</div>
+              <img src="images/miami-6.jpg" style="width:100%" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">7 / 8</div>
+              <img src="images/miami-7.jpg" style="width:100%" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">8 / 8</div>
+              <img src="images/miami-8.jpg" style="width:100%" />
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)"
+              ><img src="images/arrow4.png" alt="arrow"
+            /></a>
+            <a class="next" onclick="plusSlides(1)"
+              ><img src="images/arrow3.png" alt="arrow"
+            /></a>
+
+            <!-- Caption text -->
+
+            <!-- Thumbnail image controls -->
+            <div class="row">
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="images/miami-1.jpg"
+                  onclick="currentSlide(1)"
+                  alt="Nature"
+                />
+                <img
+                  class="demo cursor"
+                  src="images/miami-2.jpg"
+                  onclick="currentSlide(2)"
+                  alt="Nature"
+                />
+              </div>
+
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="images/miami-3.jpg"
+                  onclick="currentSlide(3)"
+                  alt="Nature"
+                />
+                <img
+                  class="demo cursor"
+                  src="images/miami-4.jpg"
+                  onclick="currentSlide(4)"
+                  alt="Lights"
+                />
+              </div>
+
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="images/miami-5.jpg"
+                  onclick="currentSlide(5)"
+                  alt="Lights"
+                />
+                <img
+                  class="demo cursor"
+                  src="images/miami-6.jpg"
+                  onclick="currentSlide(6)"
+                  alt="Lights"
+                />
+              </div>
+
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="images/miami-7.jpg"
+                  onclick="currentSlide(7)"
+                  alt="Lights"
+                />
+                <img
+                  class="demo cursor"
+                  src="images/miami-8.jpg"
+                  onclick="currentSlide(8)"
+                  alt="Lights"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section-->
+
+    <section id="footer">
+      <div class="footer-fluid">
+        <div class="social-media-icons">
+          <a class="footer-link" href="https://www.facebook.com/"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a class="footer-link" href="https://twitter.com/"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a class="footer-link" href="https://www.linkedin.com"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+        <h6 class="footerparagraph">
+          © 2019 Dositej Unkovic. All rights reserved.
+        </h6>
+      </div>
+    </section>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
